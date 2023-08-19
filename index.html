@@ -16,9 +16,15 @@
 		const callGoFunction = () => {
 			const result = window.addNumbers(5, 7);
 			alert(result);
-		}
+		};
+
+		const callGetCpuCounts = () => {
+			const result = window.getCpuCounts();
+			alert(result);
+		};
 	</script>
 	<button onclick="callGoFunction()">Add Numbers</button>
+	<button onclick="callGetCpuCounts()">GetCpuCounts()</button>
 </body>
 </html>
 

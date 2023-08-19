@@ -12,6 +12,7 @@ func add(this js.Value, args []js.Value) interface{} {
 func main() {
 	c := make(chan struct{}, 0)
 	js.Global().Set("addNumbers", js.FuncOf(add))
+	js.Global().Set("getCpuCounts", js.FuncOf(GetCpuCountsJs))
 	<-c
 }
 
